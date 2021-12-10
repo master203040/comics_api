@@ -8,29 +8,29 @@ import img8 from '../img/img8.jpg';
 const Navegation = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark me-4" >
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark" >
                 <div className="container-fluid">
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav d-flex flex-wrap justify-content-center">
+                        <ul class="navbar-nav d-flex flex-wrap justify-content-center mt-2">
                             <li className="nav-item">
                                 <img className="" src={LogoGamer}/>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <a className="nav-link active me-1" aria-current="page" href="#">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link nav-brand" href="#">Service</a>
+                                <a className="nav-link nav-brand me-1" href="#">Service</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Contacts</a>
+                                <a className="nav-link me-1" href="#">Contacts</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Gamer fron day</a>
+                                <a className="nav-link me-1" href="#">Gamer fron day</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <form className="d-flex">
+                <form className="d-flex me-3">
                     <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                     <button className="btn btn-outline-success" type="submit">Search</button>
                 </form>  
