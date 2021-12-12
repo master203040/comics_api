@@ -18,25 +18,29 @@ function App() {
      setSeries(data)
     })
   }
-  
-
   useEffect(()=>{
     getSeries()
 
   },[])
-
-
-
   return (
     <>
     <Navegation/>
-    <div>
-      {series.map((series,index)=>
-        <div>
-          <h1 className="text">{series.titles}</h1>
-          <img src={series.attributes.posterImage.small}alt="lo"/>
-        </div>
-      )}
+    <div className="container">
+      <div className="row mt-5">
+        {series.map((series,index)=>(
+          <div key={index}className="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div className="card" style={{minWidth:"200px"}}>
+              <img src={series.attributes.posterImage.small} alt="lo"/>
+              <div className="card-body">
+                <h5 className="card-title"> titles:{series.titles}</h5>
+                <hr/>
+                <p className="text-dark"> CreatedAt: {series.attributes.createdAt}</p>
+                <p className="text-dark"> Id: {series.id}</p>
+              </div>
+            </div>
+          </div>
+        ))}   
+      </div>
       
     </div>
     </>
