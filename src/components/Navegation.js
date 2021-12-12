@@ -13,19 +13,19 @@ const Navegation = () => {
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav d-flex flex-wrap justify-content-center mt-2">
                             <li className="nav-item">
-                                <img className="" src={LogoGamer}/>
+                                <img className="logo"src ={LogoGamer} alt="img"/>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active me-1" aria-current="page" href="#">Home</a>
+                                <a className="nav-link active me-1" aria-current="page" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link nav-brand me-1" href="#">Service</a>
+                                <a className="nav-link nav-brand me-1" href="/">Service</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link me-1" href="#">Contacts</a>
+                                <a className="nav-link me-1" href="/">Contacts</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link me-1" href="#">Gamer fron day</a>
+                                <a className="nav-link me-1" href="/">Gamer fron day</a>
                             </li>
                         </ul>
                     </div>
