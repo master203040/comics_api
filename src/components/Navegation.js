@@ -1,42 +1,39 @@
 import React from 'react';
-import LogoGamer from '../img/LogoGamer.jpg';
-import img1 from '../img/img1.jpg';
-import img5 from '../img/img5.jpg';
-import img8 from '../img/img8.jpg';
+import logo9 from '../img/logo9.png';
+import guku from '../img/guku.jpg';
+import logo1 from '../img/logo1.jpg';
+import yugi from '../img/yugi.jpg';
 
 
 const Navegation = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark" >
-                <div className="container-fluid">
-                    <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav d-flex flex-wrap justify-content-center mt-2">
-                            <li className="nav-item">
-                                <img className="logo"src ={LogoGamer} alt="img"/>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active me-1" aria-current="page" href="/">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link nav-brand me-1" href="/">Service</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link me-1" href="/">Contacts</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link me-1" href="/">Gamer fron day</a>
-                            </li>
-                        </ul>
+        <div className="b-example-divider"></div>
+
+        <header className="p-3 bg-dark text-white fixed-top">
+            <div className="container">
+                <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <img className='logo rounded'src={logo9}alt='logo'/>
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="/" className="nav-link px-2 text-white">Home</a></li>
+                        <li><a href="/" className="nav-link px-2 text-white">Service</a></li>
+                        <li><a href="/" className="nav-link px-2 text-white">Comics form day</a></li>
+                        <li><a href="/" className="nav-link px-2 text-white">Contact</a></li>
+                    </ul>
+
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                       <input type="search" className="form-control form-control-dark" placeholder="Search..." aria-label="Search"/>
+                    </form>
+
+                    <div class="text-end">
+                        <button type="button" className="btn btn-outline-light me-2">Login</button>
+                        <button type="button" className="btn btn-warning">Sign-up</button>
                     </div>
                 </div>
-                <form className="d-flex me-3">
-                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button className="btn btn-outline-success" type="submit">Search</button>
-                </form>  
-            </nav>
-            <div className="container">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            </div>
+        </header>
+            <div className="container mt-5">
+                <div id="carouselExampleCaptions"className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -44,24 +41,24 @@ const Navegation = () => {
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src={img1} className="d-block w-100" alt="img1"/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h1>EXTREME GAMERS</h1>
-                                <p>More Than 25.000 Gamer Online</p>
+                            <img src={guku} className="d-block w-100" alt="img1"/>
+                            <div className="carousel-caption d-none d-md-block text-dark fw-bold">
+                                <h1>EXTREME COMICS</h1>
+                                <p>More Than 25.000 Comics Online</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img src={img5} className="d-block w-100" alt="img5"/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h1>Modo Gamers...PC</h1>
-                                <p>Download Video Gamers</p>
+                            <img src={logo1} className="d-block w-100" alt="img5"/>
+                            <div className="carousel-caption d-none d-md-block text-dark fw-bold">
+                                <h1>MODO COMICS...</h1>
+                                <p>Download Comics Chapters</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img src={img8} className="d-block w-100" alt="img8"/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h1>Hacore Gamers</h1>
-                                <p>All Gamers For Your Favorite Console</p>
+                            <img src={yugi} className="d-block w-100" alt="img8"/>
+                            <div className="carousel-caption d-none d-md-block text-dark fw-bold">
+                                <h1>HACORE COMICS</h1>
+                                <p>All Comics For Your Favorite Series</p>
                             </div>
                         </div>
                     </div>
